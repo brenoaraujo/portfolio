@@ -41,21 +41,14 @@ table {
 @font-face {
   font-family: Consolas;
   src: url(../fonts/consola.ttf); }
-.gradient-primary {
-  position: relative;
-  width: 100%;
-  z-index: 0; }
+.left {
+  text-align: left; }
 
-.gradient-primary::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(135deg, #50116F 0%, #A022DE 100%);
-  z-index: 0;
-  margin-top: 250px; }
+.flex-container {
+  display: flex; }
+
+.flex-item {
+  flex: 1 100%; }
 
 h1 {
   font-family: "Roboto Condensed", helvetiva, sans-serif;
@@ -95,13 +88,14 @@ section {
   .huge-container .huge-description {
     position: relative;
     max-width: 960px;
+    width: 100%;
     display: inline-block; }
     .huge-container .huge-description h1 {
       line-height: 1.3em;
       font-weight: normal;
       padding-top: 0.3em; }
     .huge-container .huge-description h2 {
-      line-height: 1.3em;
+      line-height: 0;
       font-weight: normal; }
     .huge-container .huge-description h3 {
       font-family: "Roboto Condensed", helvetiva, sans-serif;
@@ -109,11 +103,12 @@ section {
       font-size: 2.2em;
       text-transform: uppercase;
       padding-bottom: 1.4em; }
-    .huge-container .huge-description p {
-      font-family: "Consolas", sans-serif;
-      color: #95989A;
-      font-size: 1.2em;
-      margin-bottom: 3em; }
+
+.huge-description p {
+  font-family: "Consolas", sans-serif;
+  color: #95989A;
+  font-size: 1.2em;
+  margin-bottom: 3em; }
 
 .huge-container-second-block {
   width: 100%;
@@ -125,17 +120,92 @@ section {
   text-align: center; }
   .foto-principal img {
     display: inline-block;
-    width: 800px; }
+    width: 50%; }
 
 .gradient-primary {
   text-align: center; }
   .gradient-primary p {
-    width: 960px;
+    width: 100%;
     position: relative;
     font-family: "Consolas", sans-serif;
     color: #fff;
     font-size: 1.2em;
     padding: 3em 0;
     display: inline-block; }
+
+.gradient-primary {
+  position: relative;
+  width: 100%;
+  z-index: 0; }
+
+.gradient-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #50116F 0%, #A022DE 100%);
+  z-index: 0;
+  margin-top: 15%; }
+
+#work {
+  padding: 5em 0;
+  position: relative; }
+  #work .huge-description,
+  #work .item {
+    text-align: right;
+    position: relative;
+    width: 100%; }
+    #work .huge-description img,
+    #work .item img {
+      position: relative;
+      width: 80%; }
+
+.item {
+  margin-bottom: 5em; }
+
+.title {
+  font-family: "Consolas", sans-serif;
+  color: #95989A;
+  font-size: 3.8em;
+  text-align: left;
+  margin-bottom: 1.2em; }
+  .title embed {
+    width: 80px; }
+
+.item-description {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: 2em;
+  z-index: 3; }
+  .item-description .title-item {
+    font-family: "Roboto Condensed", helvetiva, sans-serif;
+    font-size: 4.5em;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: .3em; }
+  .item-description li {
+    font-family: "Consolas", sans-serif;
+    color: #95989A;
+    font-size: 1.2em; }
+
+.description p {
+  color: #000;
+  width: 40%; }
+
+#write .flex-item:first-child {
+  margin-right: 1em; }
+
+#write .flex-item img {
+  width: 100%;
+  padding-bottom: 1em; }
+#write .flex-item a {
+  font-size: 1.3em;
+  color: #A022DE;
+  text-decoration: none; }
+  #write .flex-item a :hover {
+    color: #50116F; }
 
 /*# sourceMappingURL=geral.css.map */
