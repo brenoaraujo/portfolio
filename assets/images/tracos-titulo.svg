@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4835.211 4063.732 105.577 53.536">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #95989a;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="tracos-titulo" transform="translate(4523 -27)">
+    <line id="Line_5" data-name="Line 5" class="cls-1" y1="52" x2="31" transform="translate(313.5 4091.5)"/>
+    <line id="Line_6" data-name="Line 6" class="cls-1" y1="52" x2="31" transform="translate(335.5 4091.5)"/>
+    <line id="Line_7" data-name="Line 7" class="cls-1" y1="52" x2="31" transform="translate(360.5 4091.5)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-1" y1="52" x2="31" transform="translate(385.5 4091.5)"/>
+  </g>
+</svg>

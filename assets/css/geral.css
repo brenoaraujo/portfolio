@@ -1,0 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Roboto Condensed;
+  src: url(../fonts/RobotoCondensed-Bold.ttf); }
+@font-face {
+  font-family: Consolas;
+  src: url(../fonts/consola.ttf); }
+.gradient-primary {
+  position: relative;
+  width: 100%;
+  z-index: 0; }
+
+.gradient-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #50116F 0%, #A022DE 100%);
+  z-index: 0;
+  margin-top: 250px; }
+
+h1 {
+  font-family: "Roboto Condensed", helvetiva, sans-serif;
+  color: #A022DE;
+  font-size: 4.8em;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Consolas", sans-serif;
+  color: #95989A;
+  font-size: 2.2em;
+  text-transform: uppercase; }
+
+body {
+  font-family: 100% "Consolas", sans-serif;
+  background: #c-white; }
+
+section {
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0; }
+
+.inicio {
+  margin-top: 8%; }
+
+.huge-container {
+  width: 100%;
+  position: relative;
+  text-align: center; }
+  .huge-container .huge-description {
+    position: relative;
+    max-width: 960px;
+    display: inline-block; }
+    .huge-container .huge-description h1 {
+      line-height: 1.3em;
+      font-weight: normal;
+      padding: 0.3em; }
+    .huge-container .huge-description h2 {
+      line-height: 1.3em;
+      font-weight: normal; }
+    .huge-container .huge-description p {
+      font-family: "Consolas", sans-serif;
+      color: #95989A;
+      font-size: 1.2em;
+      margin-bottom: 3em; }
+
+.huge-container-second-block {
+  width: 100%;
+  position: relative; }
+
+.foto-principal {
+  z-index: 2;
+  position: relative;
+  text-align: center; }
+  .foto-principal img {
+    display: inline-block;
+    width: 800px; }
+
+.gradient-primary {
+  text-align: center; }
+  .gradient-primary p {
+    width: 960px;
+    position: relative;
+    font-family: "Consolas", sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 3em 0;
+    display: inline-block; }
+
+/*# sourceMappingURL=geral.css.map */

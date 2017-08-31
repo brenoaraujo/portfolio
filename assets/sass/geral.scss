@@ -1,0 +1,123 @@
+@import 'reset';
+@font-face {
+  font-family: Roboto Condensed;
+   src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: Consolas;
+   src: url(../fonts/consola.ttf);
+}
+
+$font-primary: "Roboto Condensed", helvetiva, sans-serif;
+$font-secundary: "Consolas",  sans-serif;
+
+$c-primary: #A022DE;
+$c-primary-dark: #50116F;
+$c-white: #fff;
+$c-gray: #95989A;
+$c-green: #10A293;
+
+.gradient-primary{
+  position: relative;
+  width:100%;
+  z-index: 0;
+}
+.gradient-primary::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, $c-primary-dark 0%, $c-primary 100%);
+  z-index: 0;
+  margin-top: 250px;
+
+}
+
+
+h1{
+  font-family: $font-primary;
+  color: $c-primary;
+  font-size: 4.8em;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: $font-secundary;
+  color: $c-gray;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+body{
+  font-family: 100% $font-secundary;
+  background: #c-white;
+
+}
+section{
+  width: 100%;
+  text-align:center;
+  left:0;
+  right:0;
+
+}
+.inicio{
+  margin-top: 8%;
+}
+
+.huge-container{
+width: 100%;
+position: relative;
+text-align: center;
+
+
+  .huge-description{
+    position: relative;
+    max-width: 960px;
+    display:inline-block;
+      h1{
+        line-height: 1.3em;
+        font-weight: normal;
+        padding: .3em
+      }
+      h2{
+        line-height: 1.3em;
+        font-weight: normal;
+      }
+      p{
+        font-family: $font-secundary;
+        color:$c-gray;
+        font-size:1.2em;
+        margin-bottom: 3em;
+      }
+    }
+}
+
+.huge-container-second-block{
+width: 100%;
+position: relative;
+}
+
+.foto-principal{
+z-index:2;
+position: relative;
+text-align: center;
+  img{
+    display: inline-block;
+    width: 800px;
+  }
+}
+.gradient-primary{
+text-align: center;
+  p{
+    width: 960px;
+    position: relative;
+    font-family: $font-secundary;
+    color:$c-white;
+    font-size:1.2em;
+    padding: 3em 0;
+    display: inline-block;
+  }
+
+}
