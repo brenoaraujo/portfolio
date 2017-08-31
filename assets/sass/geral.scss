@@ -49,6 +49,12 @@ h2{
   font-size: 2.2em;
   text-transform: uppercase;
 }
+h3{
+  font-family: $font-primary;
+  color: $c-primary;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
 
 body{
   font-family: 100% $font-secundary;
@@ -79,11 +85,18 @@ text-align: center;
       h1{
         line-height: 1.3em;
         font-weight: normal;
-        padding: .3em
+        padding-top: .3em
       }
       h2{
         line-height: 1.3em;
         font-weight: normal;
+      }
+      h3{
+        font-family: $font-primary;
+        color: $c-gray;
+        font-size: 2.2em;
+        text-transform: uppercase;
+        padding-bottom: 1.4em
       }
       p{
         font-family: $font-secundary;

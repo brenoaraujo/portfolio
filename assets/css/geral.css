@@ -69,6 +69,12 @@ h2 {
   font-size: 2.2em;
   text-transform: uppercase; }
 
+h3 {
+  font-family: "Roboto Condensed", helvetiva, sans-serif;
+  color: #A022DE;
+  font-size: 2.2em;
+  text-transform: uppercase; }
+
 body {
   font-family: 100% "Consolas", sans-serif;
   background: #c-white; }
@@ -93,10 +99,16 @@ section {
     .huge-container .huge-description h1 {
       line-height: 1.3em;
       font-weight: normal;
-      padding: 0.3em; }
+      padding-top: 0.3em; }
     .huge-container .huge-description h2 {
       line-height: 1.3em;
       font-weight: normal; }
+    .huge-container .huge-description h3 {
+      font-family: "Roboto Condensed", helvetiva, sans-serif;
+      color: #95989A;
+      font-size: 2.2em;
+      text-transform: uppercase;
+      padding-bottom: 1.4em; }
     .huge-container .huge-description p {
       font-family: "Consolas", sans-serif;
       color: #95989A;
