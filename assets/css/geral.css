@@ -208,4 +208,35 @@ section {
   #write .flex-item a :hover {
     color: #50116F; }
 
+header {
+  width: 100%;
+  background: #fff;
+  padding: 1em;
+  border-bottom: #95989A;
+  box-shadow: 0 0 33px 0px #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  vertical-align: middle; }
+  header h4 {
+    font-family: "Consolas", sans-serif;
+    font-size: 2em;
+    color: #A022DE;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: super;
+    padding: 0 0 0 0.2em; }
+  header embed {
+    width: 30px;
+    display: inline-block; }
+
+.navigation {
+  justify-content: flex-end; }
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #95989A; }
+
 /*# sourceMappingURL=geral.css.map */
