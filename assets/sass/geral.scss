@@ -233,11 +233,12 @@ header{
   padding:1em;
   border-bottom:$c-gray;
   box-shadow: 0 0 33px 0px #ccc;
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   box-sizing: border-box;
   vertical-align: middle;
+  z-index: 3;
   h4{
     font-family: $font-secundary;
     font-size: 2em;
@@ -247,11 +248,14 @@ header{
     vertical-align:super;
     padding: 0 0 0 0.2em;
   }
-  embed{
+  svg{
     width: 30px;
     display: inline-block;
+    fill:$c-primary-dark;
   }
 }
+
+a.logo-nav:hover, a.logo-nav:visited, a{text-decoration: none;color:$c-primary-dark;}
 
 .navigation{
 
@@ -260,9 +264,34 @@ header{
    a{
       text-decoration: none;
       display: block;
-      padding: 1em;
+      padding: .5em 1em;
       color: $c-gray;
+      font-family: $font-secundary;
+      font-size: 1.3em;
 
    }
 
+}
+
+.secondary{
+  padding-top:6em;
+
+  h1{
+    color: $c-black;
+    font-size: 3.4em;
+  }
+
+  p{
+    margin-bottom: 4em;
+    line-height: 1.5em;
+
+  }
+
+}
+.secondary .huge-description h3{
+  padding-bottom: .4em;
+}
+.img-hero-2{
+  background:#d60234;
+  margin-bottom: 4em;
 }

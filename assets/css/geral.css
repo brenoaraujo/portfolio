@@ -214,11 +214,12 @@ header {
   padding: 1em;
   border-bottom: #95989A;
   box-shadow: 0 0 33px 0px #ccc;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  vertical-align: middle; }
+  vertical-align: middle;
+  z-index: 3; }
   header h4 {
     font-family: "Consolas", sans-serif;
     font-size: 2em;
@@ -227,16 +228,39 @@ header {
     display: inline-block;
     vertical-align: super;
     padding: 0 0 0 0.2em; }
-  header embed {
+  header svg {
     width: 30px;
-    display: inline-block; }
+    display: inline-block;
+    fill: #50116F; }
+
+a.logo-nav:hover, a.logo-nav:visited, a {
+  text-decoration: none;
+  color: #50116F; }
 
 .navigation {
   justify-content: flex-end; }
   .navigation a {
     text-decoration: none;
     display: block;
-    padding: 1em;
-    color: #95989A; }
+    padding: .5em 1em;
+    color: #95989A;
+    font-family: "Consolas", sans-serif;
+    font-size: 1.3em; }
+
+.secondary {
+  padding-top: 6em; }
+  .secondary h1 {
+    color: #000;
+    font-size: 3.4em; }
+  .secondary p {
+    margin-bottom: 4em;
+    line-height: 1.5em; }
+
+.secondary .huge-description h3 {
+  padding-bottom: .4em; }
+
+.img-hero-2 {
+  background: #d60234;
+  margin-bottom: 4em; }
 
 /*# sourceMappingURL=geral.css.map */
