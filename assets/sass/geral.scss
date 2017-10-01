@@ -274,24 +274,39 @@ a.logo-nav:hover, a.logo-nav:visited, a{text-decoration: none;color:$c-primary-d
 }
 
 .secondary{
-  padding-top:6em;
-
-  h1{
-    color: $c-black;
-    font-size: 3.4em;
-  }
+  padding-top:3em;
 
   p{
     margin-bottom: 4em;
     line-height: 1.5em;
 
   }
-
+  
 }
+.title-detail{
+  color: $c-black;
+  font-size: 3.8em;
+  padding-top:0!important;
+  padding-bottom: .4em;
+}
+
 .secondary .huge-description h3{
   padding-bottom: .4em;
+}
+
+.breadcrumb{
+  font-size:1.5em;
+  color:$c-gray;
+  font-family: $font-secundary;
 }
 .img-hero-2{
   background:#d60234;
   margin-bottom: 4em;
+}
+
+
+.img-detail{
+  background:#ccc; 
+  width:100%;
+  margin:0 0 3em;
 }
