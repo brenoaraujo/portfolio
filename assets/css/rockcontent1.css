@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+    font-family: Roboto Light;
+    src: url(../fonts/Roboto-Light.ttf); 
+}
+  @font-face {
+    font-family: OpenSans EB;
+    src: url(../fonts/OpenSans-ExtraBold.ttf); 
+}
+@font-face {
+    font-family: OpenSans SB;
+    src: url(../fonts/OpenSans-SemiBold.ttf); 
+}
+
+html *{
+    box-sizing: border-box;
+}
+.projetos img{display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 57.5em;
+    overflow: hidden;
+}
+
+.apresentacao{
+    background:url(../images/bg-breno.png) #4266AE bottom right no-repeat;
+ 
+    color:#fff;
+    width: 100%;
+    min-height: 57.5em;
+    overflow: hidden;
+    padding:6em;
+}
+.apresentacao .descricao{
+    width: 50%
+}
+
+.col{
+    position: relative;
+    display: block;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.projetos:nth-child(odd) .col:first-child {
+    -ms-flex-order: 2;
+    order: 2;    
+}
+.projetos:nth-child(odd) .col:last-child {
+    -ms-flex-order: 1;
+    order: 1;    
+}
+
+.projetos:nth-child(even) .col:first-child {
+    -ms-flex-order: 1;
+    order: 1;    
+}
+.projetos:nth-child(even) .col:last-child {
+    -ms-flex-order: 2;
+    order: 2;    
+}
+
+.projetos:nth-child(even) .col:first-child .ani-wrapper img {
+    position: absolute;
+    right: 0;
+}
+
+
+.tour-content{
+    width: 100%;
+    max-width: 28.125em;
+    z-index: 3;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: OpenSans EB, arial, serif;
+}
+h3{
+    font-family: OpenSans SB, arial, serif;
+}
+p{
+    font-family: Roboto, arial, serif;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    
+}
+.apresentacao h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    margin: 0 0 .94286em;
+}
+.apresentacao p{
+    font-family: Roboto Light, arial, serif;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    margin:0 0 1.3em 0;
+}
+
+.projetos h2{
+
+font-size: 2.3rem;
+text-transform: uppercase;
+line-height: 2rem;
+margin: 3.28571em 0 .94286em;
+}
+
+.projetos h3{
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    margin:0 0 1em 0;
+   }
+
+.projetos p{
+    margin:0 0 2em 0;
+     color: #666666
+
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+  font-family: Roboto Light;
+  src: url(../fonts/Roboto-Light.ttf); 
+}
+@font-face {
+  font-family: OpenSans EB;
+  src: url(../fonts/OpenSans-ExtraBold.ttf); 
+}
+@font-face {
+  font-family: OpenSans SB;
+  src: url(../fonts/OpenSans-SemiBold.ttf); 
+}
+
+h2{
+  font-family: OpenSans EB, arial, serif;
+}
+h3{
+  font-family: OpenSans SB, arial, serif;
+}
+p{
+  font-family: Roboto, arial, serif;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  
+}

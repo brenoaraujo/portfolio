@@ -1,0 +1,49 @@
+// MEDIA
+@mixin media1024() {
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx),
+    screen and (min-width: 1023px) {
+        @content;
+    }
+}
+@mixin media768() {
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx),
+    screen and (min-width:488px) and (max-width: 1022px) {
+        @content;
+    }
+}
+@mixin media480() {
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx),
+    screen and (max-width:480px) {
+        @content;
+    }
+}
+@mixin mediaCustom($query, $type: max-width) {
+    @media
+    screen and ($type: $query) {
+        @content;
+    }
+}
+@mixin mediaInterval($query-start, $query-end, $type: width) {
+    @media
+    screen and (min-#{$type}: $query-start) and (max-#{$type}: $query-end) {
+        @content;
+    }
+}
