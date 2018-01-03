@@ -13,6 +13,7 @@
   }
   &.item-container{
     min-height: 57.5em;
+    padding-top: 1em;
   }
   
 }
@@ -108,6 +109,8 @@
   padding:6em;
   box-sizing: border-box;
   margin-bottom: 2em;
+  z-index: 4;
+  position:relative;
   @include media480() {
     background: #4266AE;
     padding:3em;
@@ -186,4 +189,16 @@
         padding: 0;
       }
     }
+}
+
+.main-title{
+  font-size: 3rem;
+  color:#095E7C;
+  text-transform: uppercase;
+  padding: 1.5em;
+  text-align: center;
+  @include media480() {
+    padding: 2em;
+    font-size: 2rem;
+  }
 }
