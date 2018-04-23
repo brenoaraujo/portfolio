@@ -122,11 +122,12 @@ a.logo-nav:hover, a.logo-nav:visited, a{text-decoration: none;color:#EA544E;}
   width: 100%;
   overflow: hidden;
   padding: 3rem 0;
-  
-  @include media480() {
-    display:block;
-    padding: 3rem 0;
+  display:block;
+    
     box-sizing: border-box;
+
+  @include media480() {
+    
   }
   &.item-container{
     min-height: 57.5em;

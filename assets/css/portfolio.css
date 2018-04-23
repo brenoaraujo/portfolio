@@ -144,12 +144,9 @@ a.logo-nav:hover, a.logo-nav:visited, a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 3rem 0; }
-  @media screen and (max-width: 480px) {
-    .container {
-      display: block;
-      padding: 3rem 0;
-      box-sizing: border-box; } }
+  padding: 3rem 0;
+  display: block;
+  box-sizing: border-box; }
   .container.item-container {
     min-height: 57.5em;
     padding-top: 1em; }
