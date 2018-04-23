@@ -46,4 +46,4 @@
     screen and (min-#{$type}: $query-start) and (max-#{$type}: $query-end) {
         @content;
     }
-}
+} 

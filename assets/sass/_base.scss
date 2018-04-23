@@ -173,8 +173,6 @@ a.logo-nav:hover, a.logo-nav:visited, a{text-decoration: none;color:#EA544E;}
     .social .curriculo a {color:$primary;padding:10px;border: 2px solid $primary; border-radius:4px;font-family: "Poppins";}
     .social .curriculo{float: right;}
 
-.apresentacao .descricao {
-  width: 50%; }
 
   @include media480() {
     .apresentacao .descricao {
