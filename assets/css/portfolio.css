@@ -145,7 +145,7 @@ a.logo-nav:hover, a.logo-nav:visited, a {
   width: 100%;
   overflow: hidden;
   padding: 3rem 0; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .container {
       display: block;
       padding: 3rem 0;
@@ -164,7 +164,7 @@ a.logo-nav:hover, a.logo-nav:visited, a {
   margin: auto;
   z-index: 2; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .apresentacao {
     background: #fff; } }
 .apresentacao h2.tw {
@@ -205,7 +205,7 @@ a.logo-nav:hover, a.logo-nav:visited, a {
 .social .curriculo {
   float: right; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .apresentacao .descricao {
     width: 100%; } }
 .apresentacao p {
