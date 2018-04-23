@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Roboto Light;
+  src: url(../fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: OpenS;
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: OpenSans EB;
+  src: url(../fonts/OpenSans-ExtraBold.ttf); }
+@font-face {
+  font-family: OpenSans SB;
+  src: url(../fonts/OpenSans-SemiBold.ttf); }
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Medium.ttf); }
+@font-face {
+  font-family: Poppins Light;
+  src: url(../fonts/Poppins-Light.ttf); }
+@font-face {
+  font-family: Poppins EB;
+  src: url(../fonts/Poppins-Black.ttf); }
+@font-face {
+  font-family: Poppins B;
+  src: url(../fonts/Poppins-Bold.ttf); }
+.ptl {
+  padding-top: 20px; }
+
+.ptxl {
+  padding-top: 60px; }
+
+.mtl {
+  margin-top: 40px; }
+
+.pal {
+  padding: 40px; }
+
+.border-top10 {
+  border-top: 10px solid #EF5BA1; }
+
+.border-top {
+  border-top: 10px solid #525252; }
+
+body {
+  padding-top: 42px; }
+
+h2 {
+  font-family: "Poppins B", arial, serif; }
+
+h3 {
+  font-family: "Poppins ", arial, serif; }
+
+p {
+  font-family: "OpenS", arial, serif;
+  font-size: 0.9rem;
+  line-height: 1.3rem; }
+
+.flex-container {
+  display: flex; }
+
+.flex-item {
+  flex: 1 100%;
+  padding: 5px; }
+
+.flex-grow {
+  flex-grow: 2; }
+
+header {
+  width: 100%;
+  background: #fff;
+  padding: .6em;
+  border-bottom: 1px solid #E4E4E4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  z-index: 3; }
+  header h4 {
+    font-family: "OpenS";
+    font-size: 2em;
+    color: #EA544E;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: super;
+    padding: 0 0 0 0.2em; }
+
+a.logo-nav:hover, a.logo-nav:visited, a {
+  text-decoration: none;
+  color: #EA544E; }
+
+.navigation {
+  justify-content: flex-end; }
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #525252;
+    font-family: "Poppins light";
+    font-size: 14px;
+    text-transform: uppercase; }
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), screen and (max-width: 480px) {
+    .container {
+      display: block;
+      padding: 3rem 0;
+      box-sizing: border-box; } }
+  .container.item-container {
+    min-height: 57.5em;
+    padding-top: 1em; }
+
+.apresentacao {
+  background: #fff;
+  width: 100%;
+  max-width: 960px;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+  z-index: 2; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), screen and (max-width: 480px) {
+  .apresentacao {
+    background: #fff; } }
+.apresentacao h2.tw {
+  font-size: 32px;
+  color: #EF5BA1; }
+
+.apresentacao h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: "Poppins B";
+  line-height: 2.6rem;
+  margin: 0 0 .1em;
+  color: #525252; }
+
+.apresentacao h3 {
+  padding-bottom: .6em;
+  font-size: 1.1em; }
+
+.apresentacao .social {
+  padding-top: 40px; }
+
+.apresentacao ul li, .apresentacao ul li a {
+  display: inline-block;
+  margin: 15px 15px 0 0;
+  vertical-align: middle; }
+
+.apresentacao .social img {
+  width: 50px;
+  height: 50px; }
+
+.social .curriculo a {
+  color: #2699FB;
+  padding: 10px;
+  border: 2px solid #2699FB;
+  border-radius: 4px;
+  font-family: "Poppins"; }
+
+.social .curriculo {
+  float: right; }
+
+.apresentacao .descricao {
+  width: 50%; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), screen and (max-width: 480px) {
+  .apresentacao .descricao {
+    width: 100%; } }
+.apresentacao p {
+  font-family: "OpenS", arial, serif;
+  font-size: 16px;
+  line-height: 1.9rem;
+  margin: 0 0 1.3em 0;
+  color: #525252; }
+
+.descricao strong {
+  color: #EF5BA1;
+  font-weight: bold; }
+
+.item-portfolio {
+  margin: auto auto;
+  width: 100%;
+  max-width: 960px;
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 50px 40px;
+  box-sizing: border-box; }
+  .item-portfolio h3 {
+    color: #fff;
+    font-family: "Poppins B";
+    font-size: 29px;
+    padding: 30px; }
+  .item-portfolio p {
+    font-family: "OpenS";
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px 30px 30px; }
+  .item-portfolio a {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    padding-left: 30px;
+    color: #fff; }
+
+.item-portfolio.dash {
+  background: url("../images/fundo-dash.png") center center no-repeat; }
+
+.item-portfolio.folha {
+  background: url("../images/fundo-folha.png") center center no-repeat; }
+
+.item-portfolio.desafio {
+  background: url("../images/fundo-desafio.png") center center no-repeat; }
+  .item-portfolio.desafio img {
+    margin-top: -20px; }
+
+.textos {
+  width: 100%;
+  max-width: 960px;
+  margin: auto auto; }
+  .textos h2 {
+    font-family: "Poppins EB";
+    color: #525252;
+    font-size: 36px;
+    line-height: 30px; }
+  .textos h3 {
+    font-family: "Poppins";
+    color: #E4E4E4;
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 30px; }
+    .textos h3 a {
+      color: #525252; }
+  .textos img {
+    width: 430px; }
+
+.header.dash {
+  background: #E31B23; }
+
+.header.folha {
+  background: url("../images/fundo-folha.png"); }
+
+.header.desafio {
+  background: url("../images/fundo-desafio.png"); }
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0; }
+  .header img {
+    width: 100%;
+    max-width: 800px; }
+  .header h1 {
+    font-family: "Poppins EB";
+    color: #fff;
+    font-size: 36px;
+    margin-top: 20px; }
+  .header p {
+    font-family: "OpenS";
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px; }
+  .header a {
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 14px;
+    display: block; }
+
+.interno .container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .interno .container h2 {
+    font-family: "Poppins light";
+    color: #525252;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: right;
+    margin-right: 110px; }
+  .interno .container p {
+    font-family: "OpenS";
+    color: #525252;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px; }
+
+.interno img, .interno video {
+  width: 100%; }
+
+.container-fluid {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box; }
+
+.background-desafio {
+  background: #B3D355; }
+
+/*# sourceMappingURL=portfolio.css.map */

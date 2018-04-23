@@ -7,6 +7,10 @@
   src: url(../fonts/Roboto-Light.ttf); 
 }
 @font-face {
+  font-family: OpenS;
+  src: url(../fonts/OpenSans-Regular.ttf); 
+}
+@font-face {
   font-family: OpenSans EB;
   src: url(../fonts/OpenSans-ExtraBold.ttf); 
 }
@@ -15,14 +19,42 @@
   src: url(../fonts/OpenSans-SemiBold.ttf); 
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Medium.ttf); 
+}
+@font-face {
+  font-family: Poppins Light;
+  src: url(../fonts/Poppins-Light.ttf); 
+}
+@font-face {
+  font-family: Poppins EB;
+  src: url(../fonts/Poppins-Black.ttf); 
+}
+@font-face {
+  font-family: Poppins B;
+  src: url(../fonts/Poppins-Bold.ttf); 
+}
+
+.ptl{padding-top:20px; }
+.ptxl{padding-top:60px; }
+.mtl{margin-top: 40px;}
+.pal{padding:40px;}
+
+.border-top10{border-top:10px solid $tw;}
+.border-top{border-top:10px solid $text;}
+
+
+body{padding-top:42px; }
+
 h2{
-  font-family: OpenSans EB, arial, serif;
+  font-family: "Poppins B", arial, serif;
 }
 h3{
-  font-family: OpenSans SB, arial, serif;
+  font-family: "Poppins ", arial, serif;
 }
 p{
-  font-family: Roboto, arial, serif;
+  font-family: "OpenS", arial, serif;
   font-size: 0.9rem;
   line-height: 1.3rem;
   
@@ -32,15 +64,19 @@ p{
 }
 .flex-item{
   flex:1 100%;
+  padding: 5px;
 }
+.flex-grow{
+  flex-grow:2;
+}
+
 
 
 header{
   width: 100%;
-  background:#fff;
-  padding:1em;
-  border-bottom:#ccc;
-  box-shadow: 0 0 33px 0px #ccc;
+  background:$white;
+  padding:.6em;
+  border-bottom:1px solid $dark-grey;
   position: fixed;
   top:0;
   left:0;
@@ -48,7 +84,7 @@ header{
   vertical-align: middle;
   z-index: 3;
   h4{
-    font-family: "Roboto";
+    font-family: "OpenS";
     font-size: 2em;
     color: #EA544E;
     text-transform: uppercase;
@@ -69,12 +105,254 @@ a.logo-nav:hover, a.logo-nav:visited, a{text-decoration: none;color:#EA544E;}
       text-decoration: none;
       display: block;
       padding: 1em;
-      color: #095E7C;
-      font-family: "Roboto";
-      font-size: 1.0em;
+      color: $text;
+      font-family: "Poppins light";
+      font-size: 14px;
       text-transform: uppercase
+
+
 
    }
 
 }
 
+.container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  @include media480() {
+    display:block;
+    padding: 3rem 0;
+    box-sizing: border-box;
+  }
+  &.item-container{
+    min-height: 57.5em;
+    padding-top: 1em;
+  }
+  
+}
+
+.apresentacao {
+  background: $white ;
+  width: 100%;
+  max-width: 960px;
+  overflow: hidden;
+  padding:0;
+  box-sizing: border-box;
+  margin: auto;
+  z-index: 2;
+   }
+   @include media480() {
+    .apresentacao {
+      background: $white;
+       } 
+    }
+  .apresentacao h2.tw {
+    font-size: 32px;
+    color:$tw; 
+  }
+
+  .apresentacao h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: "Poppins B";
+    line-height: 2.6rem;
+    margin: 0 0 .1em;
+    color:$text; 
+    
+  }
+
+  .apresentacao h3{
+    padding-bottom: .6em;
+    font-size: 1.1em;
+  }
+    .apresentacao .social{padding-top: 40px;}
+    .apresentacao ul li, .apresentacao ul li a {display:inline-block;margin:15px 15px 0 0;vertical-align: middle;}
+    .apresentacao .social img{width:50px;height: 50px;}
+    .social .curriculo a {color:$primary;padding:10px;border: 2px solid $primary; border-radius:4px;font-family: "Poppins";}
+    .social .curriculo{float: right;}
+
+.apresentacao .descricao {
+  width: 50%; }
+
+  @include media480() {
+    .apresentacao .descricao {
+      width: 100%; } 
+    }
+
+.apresentacao p {
+  font-family: "OpenS", arial, serif;
+  font-size: 16px;
+  line-height: 1.9rem;
+  margin: 0 0 1.3em 0; 
+  color: $text;
+}
+
+.descricao strong{
+  color:$tw;
+  font-weight: bold;
+}
+
+.item-portfolio{
+  margin: auto auto;
+  width: 100%;
+  max-width: 960px;
+  box-shadow: 0 0 36px rgba(0,0,0,.2);
+  border-radius: 10px;
+  padding: 50px 40px;
+  box-sizing: border-box;
+   
+      h3{
+          color: $white;
+          font-family: "Poppins B";
+          font-size:29px;
+          padding: 30px
+        }
+        
+        p{
+          font-family: "OpenS";
+          color: $white;
+          font-size:16px;
+          padding:0 10px 30px 30px;
+        }
+        a{
+          font-family: "Poppins";
+          text-transform: uppercase;
+          padding-left:30px;
+          color: $white; 
+        }
+      
+}
+.item-portfolio.dash{
+  background: url("../images/fundo-dash.png") center center no-repeat;
+}
+.item-portfolio.folha{
+  background: url("../images/fundo-folha.png") center center no-repeat;
+}
+
+.item-portfolio.desafio{
+  background: url("../images/fundo-desafio.png") center center no-repeat;
+   img{
+     margin-top:-20px;
+   }
+}
+
+.textos{
+  width: 100%;
+  max-width: 960px;
+  margin:auto auto;
+
+  h2{
+    font-family: "Poppins EB";
+    color: $text;
+    font-size: 36px;
+
+    line-height: 30px;
+  }
+  
+  h3{
+    font-family: "Poppins";
+    color: $dark-grey;
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 30px;
+     
+    a{
+      color: $text;
+    }
+  }
+
+  img{
+    width: 430px;
+  }
+
+}
+
+
+.header.dash{
+  background:#E31B23;
+}
+.header.folha{
+  background: url("../images/fundo-folha.png");
+}
+.header.desafio{
+  background: url("../images/fundo-desafio.png");
+}
+
+.header{
+  
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+
+  
+
+  img{
+    width: 100%;
+    max-width: 800px;
+  }
+
+  h1{
+    font-family: "Poppins EB";
+    color: $white;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  p{
+    font-family: "OpenS";
+    color: $white;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  a{
+    font-family: "Poppins";
+    color: $white;
+    font-size: 14px;
+    display: block;
+    
+  }
+}
+
+.interno .container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  h2{
+    font-family: "Poppins light";
+    color: $text;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: right;
+    margin-right:110px;
+    
+  }
+  p{
+    font-family: "OpenS";
+    color: $text;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    
+  }
+  
+}
+
+.interno{
+  img, video{
+    width:100%;
+  }
+  
+}
+
+.container-fluid{
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.background-desafio{
+  background:#B3D355;
+}
