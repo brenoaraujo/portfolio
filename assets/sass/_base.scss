@@ -121,6 +121,7 @@ a.logo-nav:hover, a.logo-nav:visited, a{text-decoration: none;color:#EA544E;}
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding: 3rem 0;
   @include media480() {
     display:block;
     padding: 3rem 0;
