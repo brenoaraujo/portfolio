@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="I am digital designer livin in Brazil" />
+    <meta name="keywords" content="ux designer, ui designer, ui/ux designer, user experience, digital designer, web designer"/>
+    <meta name="robots" content="index, follow">
+  <title>Breno Araujo - Digital Designer, Ux Designer</title>
+  <link rel="stylesheet" href="assets/css/geral.css">
+</head>
+<body>
+  <section class="inicio">
+    <div class="huge-container">
+      <div class="huge-description">
+        <h2>Breno Araújo</h2>
+        <h1>Digital Designer </h1>
+        <h3>(UX Designer / UI designer)</h3>
+        <P>
+          I'm a digital designer with more than 10 years experience. I'm driven by challenges and I believe design is about people.  My focus is creating great solutions to solving the people's problems, regardless the way(tools) to do that.
+        </P>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="huge-container">
+      <div class="huge-container-second-block gradient-primary"  >
+        <div class="foto-principal">
+          <img src="assets/images/foto-principal.png" alt="Breno Araújo" >
+        </div>
+          <p>I Live in Minas Gerais, Brazil<br/>
+          I have Bacharel Degree in Philosophy<br/>
+          and my actual position is Product Designer on Siteware since 2012
+          </p>
+        </div>
+    </div>
+  </section>
+  <section id="work">
+    <a href="work-follow.html">
+    <div class="huge-container">
+      <div class="huge-description">
+        <div class="title"><embed type="image/svg+xml" src="assets/images/tracos-titulo.svg" /> Work</div>
+        <div class="item">
+          <div class="item-description">
+            <div class="title-item">Follow Me</div>
+              <div class="description">
+              <p>Bring real-time delivery status information to all levels of the business.</p>
+              <ul>
+                <li>research</li>
+                <li>user experience</li>
+                <li>user interface</li>
+              </ul>
+              </div>
+          </div>
+          <img src="assets/images/follow-me.png" alt="Follow Me" >
+        </div>
+      </div>
+    </div>
+    </a>
+  </section>
+  <section id="write">
+    <div class="huge-container">
+      <div class="huge-description">
+        <div class="title">
+          <embed type="image/svg+xml" src="assets/images/tracos-titulo.svg" />
+          Write
+        </div>
+        <div class="flex-container">
+          <div class="flex-item left">
+            <a href="https://medium.com/@brenoaraujo/o-quarto-chines-e-o-motivo-pelo-qual-chatbots-nunca-conversarao-como-uma-pessoa-6ea4d9597f77">
+              <img src="https://cdn-images-1.medium.com/fit/t/800/240/1*Lw9mtexNR8rhiY7xpLwBgQ.jpeg" alt="O quarto chinês e o motivo pelo qual chatbots nunca conversarão como uma pessoa">
+              <p>O quarto chinês e o motivo pelo qual chatbots nunca conversarão como uma pessoa</p>
+            </a>
+          </div>
+          <div class="flex-item left">
+            <a href="https://medium.com/@brenoaraujo/are-you-experienced-2137852b8aaf">
+              <img src="https://cdn-images-1.medium.com/fit/t/800/240/1*kkIZY-hS3JBxip6MjGZNMA.png" alt="A importância da experiência do usuário para o sucesso do seu produto">
+              <p>A importância da experiência do usuário para o sucesso do seu produto</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-11177696-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+  <script type="text/javascript">
+    
+        $(document).ready(function(){
+    
+          var mediaBannerHeight = $('.inicio').height();
+          var mediaBannerHeightLimit = mediaBannerHeight * 0.8;
+          if ( $(this).scrollTop() > mediaBannerHeightLimit ) {
+            $('body').removeClass('home-custom-banner-hidden home-custom-banner-up');
+          }
+    
+          var timeoutScroll;
+          $(window).scroll(function () {
+            if (timeoutScroll) {
+              clearTimeout(timeoutScroll);
+            }
+            timeoutScroll = setTimeout(function() {
+              var mediaBannerHeight = $('.inicio').height();
+              var mediaBannerHeightLimit = mediaBannerHeight * 0.8;
+              if ( $(this).scrollTop() > mediaBannerHeightLimit ) {
+                $('body').removeClass('home-custom-banner-hidden');
+              } else {
+                $('body').addClass('home-custom-banner-hidden');
+              }
+              if ( $(this).scrollTop() > 100 ) {
+                $('body').addClass('home-custom-banner-up');
+              } else {
+                $('body').removeClass('home-custom-banner-up');
+              }
+              if ( $(this).scrollTop() > mediaBannerHeightLimit ) {
+                $('body').removeClass('home-custom-banner-up');
+              }
+            },10);
+          });
+    
+        });
+    
+      </script>
+    
+</body>
+</html>
